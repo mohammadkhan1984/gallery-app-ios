@@ -8,13 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+  
 
+    @IBOutlet weak var GalloryCV: UICollectionView!
+    var items = ["mohammad","reza","ali","robahemakar"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        GalloryCV.delegate = self
+        GalloryCV.dataSource = self
     }
-
-
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = GalloryCV.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? galloryCollectionViewCell
+        cell?.CheckLabel.text = items[indexPath.row]
+        return cell!
+        
+    }
 }
 

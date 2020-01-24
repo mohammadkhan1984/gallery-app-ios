@@ -13,6 +13,7 @@
 		F52BD36123DB238E0018CF37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52BD35F23DB238E0018CF37 /* Main.storyboard */; };
 		F52BD36323DB23900018CF37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52BD36223DB23900018CF37 /* Assets.xcassets */; };
 		F52BD36623DB23900018CF37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52BD36423DB23900018CF37 /* LaunchScreen.storyboard */; };
+		F55D9C8823DB476C00BE9252 /* galloryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55D9C8723DB476C00BE9252 /* galloryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F52BD36223DB23900018CF37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F52BD36523DB23900018CF37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F52BD36723DB23900018CF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F55D9C8723DB476C00BE9252 /* galloryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galloryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				F52BD35923DB238E0018CF37 /* AppDelegate.swift */,
 				F52BD35B23DB238E0018CF37 /* SceneDelegate.swift */,
 				F52BD35D23DB238E0018CF37 /* ViewController.swift */,
+				F55D9C8723DB476C00BE9252 /* galloryCollectionViewCell.swift */,
 				F52BD35F23DB238E0018CF37 /* Main.storyboard */,
 				F52BD36223DB23900018CF37 /* Assets.xcassets */,
 				F52BD36423DB23900018CF37 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				F52BD35E23DB238E0018CF37 /* ViewController.swift in Sources */,
 				F52BD35A23DB238E0018CF37 /* AppDelegate.swift in Sources */,
 				F52BD35C23DB238E0018CF37 /* SceneDelegate.swift in Sources */,
+				F55D9C8823DB476C00BE9252 /* galloryCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
