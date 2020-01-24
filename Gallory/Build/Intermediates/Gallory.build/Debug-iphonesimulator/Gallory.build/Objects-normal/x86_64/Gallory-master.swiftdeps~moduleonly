@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "f9963cb308a4ff4ce2ca012f45ddf30a"
+build_time: [1579871251, 563081000]
+inputs:
+  "/Users/reza/Documents/gallery-app-ios/Gallory/Gallory/ViewController.swift": [1579871246, 293817778]
+  "/Users/reza/Documents/gallery-app-ios/Gallory/Gallory/AppDelegate.swift": [1579871246, 268162837]
+  "/Users/reza/Documents/gallery-app-ios/Gallory/Gallory/SceneDelegate.swift": [1579871246, 290368256]
