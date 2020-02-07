@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gallory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainMenuViewController" customModule="Gallory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,14 +28,17 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="epy-0f-Mmb" customClass="galloryCollectionViewCell" customModule="Gallory" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="154"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WHO-ZY-109">
-                                            <rect key="frame" x="0.0" y="0.0" width="155" height="154"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="check" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-3U-rgs">
-                                                    <rect key="frame" x="20" y="40" width="47" height="21"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jLw-LP-b69" userLabel="menuItemImage">
+                                                    <rect key="frame" x="33" y="17" width="88" height="88"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-3U-rgs" userLabel="menueItemName">
+                                                    <rect key="frame" x="60" y="113" width="29" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -43,15 +46,19 @@
                                             </subviews>
                                             <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="c2h-3U-rgs" secondAttribute="trailing" constant="88" id="IHk-NQ-ogT"/>
-                                                <constraint firstAttribute="bottom" secondItem="c2h-3U-rgs" secondAttribute="bottom" constant="93" id="hZh-10-kUo"/>
-                                                <constraint firstItem="c2h-3U-rgs" firstAttribute="leading" secondItem="WHO-ZY-109" secondAttribute="leading" constant="20" id="hxC-Km-FCV"/>
-                                                <constraint firstItem="c2h-3U-rgs" firstAttribute="top" secondItem="WHO-ZY-109" secondAttribute="top" constant="40" id="tgV-p6-Tr2"/>
+                                                <constraint firstItem="jLw-LP-b69" firstAttribute="leading" secondItem="WHO-ZY-109" secondAttribute="leading" constant="16" id="0sK-bd-Aq3"/>
+                                                <constraint firstItem="jLw-LP-b69" firstAttribute="top" secondItem="WHO-ZY-109" secondAttribute="top" constant="16" id="Eov-ma-jTk"/>
+                                                <constraint firstItem="jLw-LP-b69" firstAttribute="centerY" secondItem="WHO-ZY-109" secondAttribute="centerY" id="NR2-Lx-sel"/>
+                                                <constraint firstItem="c2h-3U-rgs" firstAttribute="leading" secondItem="jLw-LP-b69" secondAttribute="leading" id="SyQ-Ep-UrU"/>
+                                                <constraint firstItem="c2h-3U-rgs" firstAttribute="trailing" secondItem="jLw-LP-b69" secondAttribute="trailing" id="VCd-CM-CQl"/>
+                                                <constraint firstItem="c2h-3U-rgs" firstAttribute="centerY" secondItem="jLw-LP-b69" secondAttribute="centerY" id="pje-Zk-L9g"/>
+                                                <constraint firstAttribute="trailing" secondItem="jLw-LP-b69" secondAttribute="trailing" constant="16" id="qYe-tY-WIT"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="155" height="154"/>
+                                        <size key="customSize" width="155" height="155"/>
                                         <connections>
-                                            <outlet property="CheckLabel" destination="c2h-3U-rgs" id="2gI-Cb-rgI"/>
+                                            <outlet property="MenuItemText" destination="c2h-3U-rgs" id="yMX-Ky-CZr"/>
+                                            <outlet property="menuItemImage" destination="jLw-LP-b69" id="v6K-bG-wWa"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -69,4 +76,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person.crop.circle" catalog="system" width="64" height="60"/>
+    </resources>
 </document>

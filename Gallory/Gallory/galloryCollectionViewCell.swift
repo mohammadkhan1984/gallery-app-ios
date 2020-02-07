@@ -9,6 +9,9 @@
 import UIKit
 
 class galloryCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var CheckLabel: UILabel!
+    
+    
+    @IBOutlet weak var menuItemImage: UIImageView!
+    @IBOutlet weak var MenuItemText: UILabel!
     
 }

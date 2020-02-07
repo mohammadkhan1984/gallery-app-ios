@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+class MainMenuViewController : UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
   
 
     @IBOutlet weak var GalloryCV: UICollectionView!
@@ -23,7 +23,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = GalloryCV.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? galloryCollectionViewCell
-        cell?.CheckLabel.text = items[indexPath.row]
+        cell?.MenuItemText.text = items[indexPath.row]
         return cell!
         
     }
